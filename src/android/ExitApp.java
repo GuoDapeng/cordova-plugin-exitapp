@@ -1,4 +1,4 @@
-package go.free.cordova.exitapp;
+package go.free.cordova;
 
 import android.app.Activity;
 import android.widget.Toast;
