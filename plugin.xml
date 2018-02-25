@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="kr.co.joycorp.cordova.exitapp"
+           id="go.free.cordova.exitapp"
            version="1.0.0">
 
   <name>ExitApp</name>
