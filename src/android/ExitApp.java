@@ -1,4 +1,7 @@
-package kr.co.joycorp.cordova.exitapp;
+package go.free.cordova.exitapp;
+
+import android.app.Activity;
+import android.widget.Toast;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
@@ -13,7 +16,9 @@ import android.app.Activity;
 
 public class ExitApp extends CordovaPlugin {
 	protected void pluginInitialize() {}
-
+	private void show(String txt) {
+        Toast.makeText(cordova.getActivity().getApplicationContext(), txt, Toast.LENGTH_SHORT).show();
+    }
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 		/*
 		 * Finishes the activity provided by CordovaInterface.
@@ -22,6 +27,7 @@ public class ExitApp extends CordovaPlugin {
 		if (action.equals("exitApp")) {
 			try {
 				Activity activity = this.cordova.getActivity();
+				show("in java exitApp");
 				activity.finish();
 				callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, 0));
 			} catch (Exception e) {
