@@ -27,7 +27,7 @@ public class ExitApp extends CordovaPlugin {
 		if (action.equals("exitApp")) {
 			try {
 				Activity activity = this.cordova.getActivity();
-				show("in java exitApp");
+				// show("in java exitApp");
 				activity.finish();
 				callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, 0));
 			} catch (Exception e) {
