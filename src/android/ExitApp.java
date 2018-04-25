@@ -23,7 +23,7 @@ public class ExitApp extends CordovaPlugin {
 		/*
 		 * Finishes the activity provided by CordovaInterface.
 		 */
-		
+
 		if (action.equals("exitApp")) {
 			try {
 				Activity activity = this.cordova.getActivity();
